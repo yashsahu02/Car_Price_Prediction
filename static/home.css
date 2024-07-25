@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #aaaaaa;
+    color: white;
+}
+
+a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: white;
+}
+
+.heading {
+    height: 200px;
+    /* background: url("car_bg_image.jpg"); */
+    background: url("car_bg.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: end;
+}
+
+.Name {
+    top: 0px;
+    /* margin-right: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name>h2 {
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+    right: 40px;
+}
+
+.Name>p {
+    font-size: 24px;
+    position: relative;
+    right: 40px;
+    top: 40px;
+}
+
+.form-filling {
+    margin: auto;
+    width: 1100px;
+}
+
+.form-filling>h3 {
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.similar-rows {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: 20px 50px;
+}
+
+input[type=text] {
+    width: 400px;
+    height: 20px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    border-color: black;
+}
+
+.checkbox-options {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    border: 1.6px solid black;
+    padding: 5px;
+    height: 20px;
+}
+
+.checkbox-options>input {
+    margin-right: 30px
+}
+
+.checkbox-options>label {
+    margin-left: 30px
+}
+
+.prediction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.predict-button>button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.car-jumping>img {
+    height: 80px;
+    width: 120px;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.result-message>h3 {
+    font-weight: normal;
+
+}
+
+.loader {
+    margin: auto;
+}
+
+
+.loader>img {
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:1350px) {
+
+    .Name>h2 {
+        font-size: 30px;
+    }
+
+    .Name>p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .Name>h2 {
+        font-size: 25px;
+    }
+
+    .Name>p {
+        font-size: 18px;
+    }
+
+    .form-filling {
+        width: 800px;
+        font-size: 16px;
+    }
+
+
+    label {
+        font-size: 18px;
+        width: 293px;
+    }
+
+    input[type=text] {
+        width: 280px;
+        font-size: 16px;
+    }
+
+    .checkbox-options {
+        width: 280px;
+        font-size: 16px;
+    }
+
+    .checkbox-options>input {
+        margin-right: 5px
+    }
+
+    .checkbox-options>label {
+        margin-left: 5px
+    }
+
+    .prediction {
+        width: 800px;
+        justify-content: center;
+    }
+
+    .btn-container {
+        width: 200px;
+    }
+
+    .predict-button>button {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .car-jumping>img {
+        height: 60px;
+        width: 100px;
+    }
+
+    .result {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .similar-rows {
+        margin: 10px 30px;
+    }
+
+    .form-filling {
+        margin: auto;
+        width: 800px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .navbar {
+        height: 50px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .heading {
+        height: 170px;
+        background: url("");
+        background-color: black;
+    }
+
+    .Name>p {
+        top: 10px;
+        left: 120px;
+    }
+
+    .similar-rows {
+        display: block;
+    }
+
+    .prediction {
+        width: 300px;
+        flex-direction: column;
+        position: relative;
+        left: 30px;
+        margin: 0px;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .car-jumping {
+        display: none;
+    }
+
+    .result {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        margin: 5px 0px;
+    }
+
+    .form-filling {
+        margin: auto;
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width:625px) {
+    .navbar {
+        height: 30px;
+        justify-content: space-evenly;
+    }
+
+    a {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .heading {
+        height: 120px;
+        background: url("");
+        background-color: black;
+    }
+
+    .Name>h2 {
+        font-size: 22px;
+        text-align: center;
+        right: 0;
+    }
+
+    .Name>p {
+        font-size: 18px;
+        text-align: center;
+        top: 10px;
+        left: 0px;
+
+    }
+
+    .form-filling {
+        margin: auto;
+        width: 300px;
+    }
+
+    .prediction {
+        position: relative;
+        right: 10px;
+        left: 0px;
+    }
+
+}
+
+@media screen and (max-width:350px){
+    .navbar {
+        height: 25px;
+        justify-content: center
+    }
+
+    a {
+        font-size: 13px;
+        margin-right: 4px;
+    }
+
+    .heading {
+        height: 110px;
+        background: url("");
+        background-color: black;
+    }
+
+    .Name>h2{
+        font-size: 20px;
+    }
+
+    .Name>p {
+        font-size: 14px;
+    }
+
+
+    .form-filling {
+        width: 290px;
+        margin: auto;
+    }
+    
+
+    input[type=text] {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .checkbox-options {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .similar-rows{
+        width: 280px;
+    }
+    
+    .btn{
+        margin: auto;
+    }
+
+}

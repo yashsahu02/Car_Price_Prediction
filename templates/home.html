@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='home.css') }}">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT MODEL</a>
+        <a href="{{ url_for('static',filename='aboutData.html') }}">ABOUT DATASET</a>
+        <a href="{{ url_for('static',filename='github.html') }}">GIT HUB</a>
+    </div>
+    <div class="heading">
+        <div class="Name">
+            <h2>Old Car Price Prediction : Machine Learning Web Application</h2>
+            <p>Predict the Price based on features of Car...</p>
+        </div>
+    </div>
+
+    <div class="form-filling">
+
+        <form action="{{ url_for('predictprice') }}" method="post">
+            <div class="similar-rows">
+                <div class="similar-rows-element">
+                    <label for="">Name of Car</label><br>
+                    <input type="text" name="car" list="carname" required>
+                    <datalist id="carname">
+                        <option value="Maruti Alto">Maruti Alto</option>
+                        <option value="Hyundai Grand">Hyundai Grand</option>
+                        <option value="Hyundai i20">Hyundai i20</option>
+                        <option value="Ford Ecosport">Ford Ecosport</option>
+                        <option value="Maruti Wagon R">Maruti Wagon R</option>
+                        <option value="Hyundai i10">Hyundai i10</option>
+                        <option value="Maruti Swift">Maruti Swift</option>
+                        <option value="Hyundai Verna">Hyundai Verna</option>
+                        <option value="Maruti Ciaz">Maruti Ciaz</option>
+                        <option value="Toyota Innova">Toyota Innova</option>
+                        <option value="Maruti Baleno">Maruti Baleno</option>
+                        <option value="Maruti Swift Dzire">Maruti Swift Dzire</option>
+                        <option value="Hyundai Creta">Hyundai Creta</option>
+                        <option value="Honda City">Honda City</option>
+                        <option value="Renault KWID">Renault KWID</option>
+                        <option value="Honda Amaze">Honda Amaze</option>
+                        <option value="Mahindra XUV500">Mahindra XUV500</option>
+                        <option value="Mahindra Scorpio">Mahindra Scorpio</option>
+                        <option value="Maruti Vitara">Maruti Vitara</option>
+                        <option value="Volkswagen Polo">Volkswagen Polo</option>
+                        <option value="Ford Figo">Ford Figo</option>
+                        <option value="Maruti Ertiga">Maruti Ertiga</option>
+                    </datalist>
+                </div>
+
+                <div class="similar-rows-element">
+                    <label for="carAge">Age of Car</label><br>
+                    <input type="text" name="car_age" id="carAge" placeholder="" value="" required>
+                </div>
+            </div>
+
+            <div class="similar-rows">
+                <div class="similar-rows-element">
+                    <label for="km_driven">Total Distance Traveled (in KM)</label><br>
+                    <input type="text" name="km_driven" id="km_driven" required>
+                </div>
+
+                <div class="similar-rows-element">
+                    <label for="">Way of Selling</label><br>
+                    <div class="checkbox-options">
+                        <label for="individual">Individual</label>
+                        <input type="radio" id="individual" value="Individual" name="sellingtype" required>
+                        <label for="dealer">Dealer</label>
+                        <input type="radio" id="dealer" value="Dealer" name="sellingtype" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="similar-rows">
+                <div class="similar-rows-element">
+                    <label for="">Fuel Type</label><br>
+                    <div class="checkbox-options">
+                        <label for="petrol">Petrol</label>
+                        <input type="radio" name="fuel" id="petrol" value="Petrol" required>
+                        <label for="diesel">Diesel</label>
+                        <input type="radio" name="fuel" id="diesel" value="Diesel" required>
+                    </div>
+                </div>
+
+                <div class="similar-rows-element">
+                    <label for="">Transmission Type</label><br>
+                    <div class="checkbox-options">
+                        <label for="manual">Manual</label>
+                        <input type="radio" name="transmission" id="manual" value="Manual" required>
+                        <label for="automatic">Automatic</label>
+                        <input type="radio" name="transmission" id="automatic" value="Automatic" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="similar-rows">
+                <div class="similar-rows-element">
+                    <label for="mileage">Mileage (kilometer the car runs per litre)</label><br>
+                    <input type="text" name="mileage" id="mileage" required>
+                </div>
+
+                <div class="similar-rows-element">
+                    <label for="engine">Engine Capacity (in cc)</label><br>
+                    <input type="text" name="engine" id="engine" required>
+                </div>
+            </div>
+
+            <div class="similar-rows">
+                <div class="similar-rows-element">
+                    <label for="maxpower">Maximum Power (in BHP)</label><br>
+                    <input type="text" name="max_power" id="maxpower" required>
+                </div>
+
+                <div class="similar-rows-element">
+                    <label for="seats">Total Seats</label><br>
+                    <input type="text" name="seats" id="seats" required>
+                </div>
+            </div>
+
+            <div class="prediction">
+                <div class="btn-container">
+                    <div class="predict-button">
+                        <button type="submit" class="btn">PREDICT</button>
+                    </div>
+                    <div class="car-jumping">
+                        <img src="static/car-jump.gif" alt="Jumping Car Video">
+                    </div>
+                </div>
+        
+                <div class="result">
+                    <div class="result-message">
+                        <h2>{{price}}</h2>
+                    </div>
+                </div>
+            </div>
+    
+        </form>
+    </div>
+</body>
+
+</html>
