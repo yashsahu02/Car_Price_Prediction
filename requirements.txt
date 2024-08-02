@@ -4,3 +4,10 @@ scikit-learn
 matplotlib
 Flask
 gunicorn==19.7.1
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+Flask
+gunicorn==19.7.1
