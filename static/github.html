@@ -11,32 +11,87 @@
             padding: 0;
         }
 
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
         a {
-            margin-right: 40px;
             text-decoration: none;
-            color: lightskyblue;
+            cursor: pointer;
         }
 
         .message {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 24px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .icons a img {
+            height: 80px;
+            width: 80px;
+            margin: 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            h2 {
+                font-size: 22px;
+            }
+
+            .message {
+                margin-top: 25px;
+                font-size: 18px;
+            }
+
+            .icons a img {
+                height: 60px;
+                width: 60px;
+                margin: 20px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            .message {
+                font-size: 16px;
+            }
+
+            .icons a img {
+                height: 50px;
+                width: 50px;
+                margin: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <!-- <div class="navbar">
-        <a href="templates/home.html">HOME</a>
-        <a href="#">ABOUT MODEL</a>
-        <a href="#">ABOUT DATASET</a>
-    </div> -->
-    <p class="message">All code has been uploaded to GitHub</p>
+    <h2>GITHUB</h2>
+    <p class="message">All code has been pushed to <a href="https://github.com/yashsahu02/Car_Price_Prediction.git"
+            target="_blank">Github</a></p>
     <p class="message">Old Car Price Prediction : Machine Learning Web Application</p>
     <p class="message">Created By : Yash Sahu</p>
-    <p class="message">LinkedIn : yashsahu02</a></p>
-    <p class="message">GitHub : yashsahu02</a></p>
+    <p class="message">Email : sahu.yash0205@gmail.com</p>
 
+    <div class="icons">
+        <a href="https://github.com/yashsahu02" target="_blank"><img src="githublogo.png" alt="GitHub Logo"></a>
+        <a href="https://www.linkedin.com/in/yashsahu02/" target="_blank"><img src="LinkedIn_logo.png"
+                alt="LinkedIn Logo"></a>
+    </div>
 
 </body>
 

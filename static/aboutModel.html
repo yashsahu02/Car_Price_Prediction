@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT MODEL</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 24px;
+            padding: 20px;
+            text-align: justify;
+        }
+        
+        img{
+            padding:5px 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            h2{
+                font-size: 22px;
+            }
+            p{
+                font-size: 18px;
+                margin-top: 15px;
+                font-size: 18px;
+                padding: 18px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            .p {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .icons a img {
+                height: 50px;
+                width: 50px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ABOUT MODEL</h2>
+        <p><strong>"Old Car Price Prediction"</strong> is a Machine Learnig Web Application. It is ML model trained on the
+            data of old cars, details of data given in the  section <a
+                href="aboutData.html">about dataset</a>. This is a Supervised Machine Learning
+            based Regression Model, which is trained using <u>RandomForestRegressor</u> algorithm with the highest <u>R2 Score
+            0.9042</u> compared to all other Regression Algorithms. </p>
+
+        <p>This model takes some inputs like : Car Name, Age of Car, Kilometer Drivern, Way of Selling, Fuel Type,
+            Transmission Type, Mileage, Engine Power, Maximum Power and Total Number of Seats for all entered values
+            based on the data on which model is trained it predicts the "Selling Price".</p>
+        
+        <p>Here are some more details of model :</p>
+        <img src="accuracy_of_model.png" alt="Accuracy Score of Model">
+    </div>
+
+</body>
+
+</html>

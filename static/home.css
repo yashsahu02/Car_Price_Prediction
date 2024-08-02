@@ -16,6 +16,7 @@ a {
     margin-right: 40px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .heading {
@@ -67,11 +68,17 @@ a {
     text-align: center;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .similar-rows {
     display: flex;
     justify-content: space-between;
     font-size: 22px;
-    margin: 20px 50px;
+    margin: 12px 25px;
 }
 
 input[type=text] {
@@ -342,6 +349,10 @@ input[type=text] {
         width: 300px;
     }
 
+    .similar-rows{
+        margin: 10px auto;
+    }
+
     .prediction {
         position: relative;
         right: 10px;
@@ -357,8 +368,8 @@ input[type=text] {
     }
 
     a {
-        font-size: 13px;
-        margin-right: 4px;
+        font-size: 11px;
+        margin: 0px 5px;
     }
 
     .heading {
@@ -381,21 +392,20 @@ input[type=text] {
         margin: auto;
     }
     
-
     input[type=text] {
-        width: 250px;
+        width: 265px;
         font-size: 16px;
     }
 
     .checkbox-options {
-        width: 250px;
+        width: 265px;
         font-size: 16px;
     }
 
     .similar-rows{
         width: 280px;
     }
-    
+
     .btn{
         margin: auto;
     }
