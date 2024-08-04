@@ -57,14 +57,14 @@
 
                 <div class="similar-rows-element">
                     <label for="carAge">Age of Car</label><br>
-                    <input type="text" name="car_age" id="carAge" placeholder="" value="" required>
+                    <input type="number" max="30" min="1" name="car_age" id="carAge" placeholder="" value="" required>
                 </div>
             </div>
 
             <div class="similar-rows">
                 <div class="similar-rows-element">
                     <label for="km_driven">Total Distance Traveled (in KM)</label><br>
-                    <input type="text" name="km_driven" id="km_driven" required>
+                    <input type="number" min="500" max="4000000" name="km_driven" id="km_driven" required>
                 </div>
 
                 <div class="similar-rows-element">
@@ -103,24 +103,24 @@
             <div class="similar-rows">
                 <div class="similar-rows-element">
                     <label for="mileage">Mileage (kilometer the car runs per litre)</label><br>
-                    <input type="text" name="mileage" id="mileage" required>
+                    <input type="number" min="9" max="30" name="mileage" id="mileage" required>
                 </div>
 
                 <div class="similar-rows-element">
                     <label for="engine">Engine Capacity (in cc)</label><br>
-                    <input type="text" name="engine" id="engine" required>
+                    <input type="number" min="796" max="2755" name="engine" id="engine" required>
                 </div>
             </div>
 
             <div class="similar-rows">
                 <div class="similar-rows-element">
                     <label for="maxpower">Maximum Power (in BHP)</label><br>
-                    <input type="text" name="max_power" id="maxpower" required>
+                    <input type="number" min="45" max="190" name="max_power" id="maxpower" required>
                 </div>
 
                 <div class="similar-rows-element">
                     <label for="seats">Total Seats</label><br>
-                    <input type="text" name="seats" id="seats" required>
+                    <input type="number" min="4" max="9" name="seats" id="seats" required>
                 </div>
             </div>
 
