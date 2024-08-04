@@ -10,6 +10,14 @@ le=pickle.load(open('models/labelEncoder.pkl','rb'))
 preprocessor=pickle.load(open('models/processor.pkl','rb'))
 RF_model=pickle.load(open('models/model.pkl','rb'))
 
+valid_car_names=['Maruti Alto', 'Hyundai Grand', 'Hyundai i20', 'Ford Ecosport',
+       'Maruti Wagon R', 'Hyundai i10', 'Maruti Swift', 'Hyundai Verna',
+       'Maruti Ciaz', 'Toyota Innova', 'Maruti Baleno',
+       'Maruti Swift Dzire', 'Hyundai Creta', 'Honda City',
+       'Renault KWID', 'Honda Amaze', 'Mahindra XUV500',
+       'Mahindra Scorpio', 'Maruti Vitara', 'Volkswagen Polo',
+       'Ford Figo', 'Maruti Ertiga']
+
 app=Flask(__name__)
 
 @app.route('/')
@@ -22,6 +30,9 @@ def predictprice():
         col_names=['car_name', 'vehicle_age', 'km_driven', 'seller_type', 'fuel_type','transmission_type', 'mileage', 'engine', 'max_power', 'seats']
         
         car_name=request.form.get('car')
+        if car_name not in valid_car_names:
+            return render_template("invalidCarName.html")
+
         car_age=int(request.form.get('car_age'))
         km_driven=int(request.form.get('km_driven'))
         seller_type=request.form.get('sellingtype')
