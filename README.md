@@ -2,39 +2,12 @@
 Try it out : https://car-price-prediction-q0fz.onrender.com/
 
 Main Page
-
-
-![Screenshot 2024-09-21 212528](https://github.com/user-attachments/assets/73340020-c17a-4ec8-adda-5c4615865d4e)
-
-
-
-
-![Screenshot 2024-09-21 212619](https://github.com/user-attachments/assets/a96fc660-5974-49f7-b3e5-9b129f690a0a)
-
-
-
-
-![Screenshot 2024-09-21 213039](https://github.com/user-attachments/assets/3972eb0f-093c-4002-8edc-b50f35401228)
-
-
-
-
+![Screenshot (1)](https://github.com/user-attachments/assets/0a6495a5-31d7-4b3f-97ae-34e9657e911b)
+![Screenshot (2)](https://github.com/user-attachments/assets/043e1ddc-1ba5-42fb-9d2c-09e09ce74039)
+![Screenshot (3)](https://github.com/user-attachments/assets/c326403b-1a04-4c41-ab97-f4df359e36ed)
 About Dataset Page
-
-![Screenshot 2024-09-21 212700](https://github.com/user-attachments/assets/c32793fd-40d4-4534-8a36-07ebd6897cec)
-
-
-
-
+![Screenshot (4)](https://github.com/user-attachments/assets/ecc48685-961b-49d8-991d-2678ddf7db08)
 About Model Page
-
-
-
-![Screenshot 2024-09-21 212720](https://github.com/user-attachments/assets/250f8a73-f90e-4d1d-ab21-63dda850a239)
-
-
+![Screenshot (6)](https://github.com/user-attachments/assets/899056c9-7258-40f8-b2dc-593619b99449)
 Github Link Page
-
-
-
-![Screenshot 2024-09-21 212736](https://github.com/user-attachments/assets/3d116b7e-7f6a-42ff-9086-ff891c71a785)
+![Screenshot (7)](https://github.com/user-attachments/assets/2c853b28-1cc7-4d74-b91b-3c624337310f)
