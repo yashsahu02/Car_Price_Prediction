@@ -1,9 +1,16 @@
 ﻿# Car_Price_Prediction
 Try it out : https://car-price-prediction-q0fz.onrender.com/
+<br>
 
 ## Main Page
 ![Screenshot (1)](https://github.com/user-attachments/assets/0a6495a5-31d7-4b3f-97ae-34e9657e911b)
+
+<br>
+
 ![Screenshot (2)](https://github.com/user-attachments/assets/043e1ddc-1ba5-42fb-9d2c-09e09ce74039)
+
+<br>
+
 ![Screenshot (3)](https://github.com/user-attachments/assets/c326403b-1a04-4c41-ab97-f4df359e36ed)
 ## About Dataset Page
 ![Screenshot (4)](https://github.com/user-attachments/assets/ecc48685-961b-49d8-991d-2678ddf7db08)
