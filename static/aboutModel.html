@@ -24,7 +24,16 @@
             width: 100%;
             border-bottom: 2px solid white;
         }
-
+        
+        .scroll-progress{
+            width: 0;
+            background-color: yellow;
+            height: 3px;
+            position: fixed;
+            top: 0;
+            left: 0;        
+        }
+        
         .container{
             padding-top: 50px;
         }
@@ -79,6 +88,7 @@
 
 <body>
     <h2>ABOUT MODEL</h2>
+    <div class="scroll-progress"></div>
     <div class="container">
         <p><strong>"Old Car Price Prediction"</strong> is a Machine Learnig Web Application created using <u>Flask</u>
             framework. It is ML model trained on the
@@ -95,6 +105,24 @@
         <p>Here are some more details of model :</p>
         <img src="accuracy_of_model.png" alt="Accuracy Score of Model">
     </div>
+
+
+    <!-- JavaScript for scroll progress bar -->
+    <script>
+        const scrollProgressElement = document.querySelector(".scroll-progress");
+
+        function scrollProgress() {
+            const totalheightOfWebPage = document.body.scrollHeight;
+            const currentDistanceFromTop = document.documentElement.scrollTop;
+            const windowHeight = document.documentElement.clientHeight;
+
+            const scrolledPercentage = (currentDistanceFromTop / (totalheightOfWebPage - windowHeight)) * 100;
+
+            scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
+        }
+
+        document.addEventListener('scroll', scrollProgress)
+    </script>
 
 </body>
 

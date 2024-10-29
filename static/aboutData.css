@@ -7,6 +7,16 @@
     padding-top: 50px;
 }
 
+
+.scroll-progress{
+    width: 0;
+    background-color: #FFFF00;
+    height: 3px;
+    position: fixed;
+    top: 0;
+    left: 0;        
+}
+
 h2 {
     font-size: 30px;
     font-weight: normal;

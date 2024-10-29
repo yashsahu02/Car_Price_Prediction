@@ -9,7 +9,10 @@
 </head>
 
 <body>
+    <!-- Div to create scroll progress bar -->
+    
     <h2>ABOUT DATASET</h2>
+    <div class="scroll-progress"></div>
     <div class="container">
         <p>The used car market in India is a dynamic and ever-changing landscape. Prices can fluctuate wildly based on a
             variety of factors including the make and model of the car, its mileage, its condition and the current
@@ -64,27 +67,49 @@
             </div>
         </div>
 
-        
+
         <h3>Output of Some Useful Methods</h3>
         <p>Here are the details of dataset, here <u>new</u> is the name of my DataFrame.</p>
         <div class="output">
             <p><kbd>new.head(5)</kbd></p>
             <img width="94%" src="head_method.png" alt="Visual Representation of head() method for dataset">
-            <p>The head() method returns a specified number of rows, string from the top. The head() method returns the first 5 rows if a number is not specified.</p>
+            <p>The head() method returns a specified number of rows, string from the top. The head() method returns the
+                first 5 rows if a number is not specified.</p>
         </div>
-        
+
         <div class="output">
             <p><kbd>new.info()</kbd></p>
             <img width="94%" src="info_method.png" alt="Visual Representation of info() method for dataset">
-            <p>The info() method prints information about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values).</p>
+            <p>The info() method prints information about the DataFrame. The information contains the number of columns,
+                column labels, column data types, memory usage, range index, and the number of cells in each column
+                (non-null values).</p>
         </div>
 
         <div class="output">
             <p><kbd>new.describe()</kbd></p>
             <img width="94%" src="describe_method.png" alt="Visual Representation of describe() method for dataset">
-            <p>describe() method in Pandas is a convenient way to get a quick overview of your data. By default, it provides the count, mean, standard deviation, minimum, 25th percentile (Q1), median (50th percentile or Q2), 75th percentile (Q3), and maximum of the columns.</p>
+            <p>describe() method in Pandas is a convenient way to get a quick overview of your data. By default, it
+                provides the count, mean, standard deviation, minimum, 25th percentile (Q1), median (50th percentile or
+                Q2), 75th percentile (Q3), and maximum of the columns.</p>
         </div>
     </div>
+
+    <!-- JavaScript for scroll progress bar -->
+    <script>
+        const scrollProgressElement = document.querySelector(".scroll-progress");
+
+        function scrollProgress() {
+            const totalheightOfWebPage = document.body.scrollHeight;
+            const currentDistanceFromTop = document.documentElement.scrollTop;
+            const windowHeight = document.documentElement.clientHeight;
+
+            const scrolledPercentage = (currentDistanceFromTop / (totalheightOfWebPage - windowHeight)) * 100;
+
+            scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
+        }
+
+        document.addEventListener('scroll', scrollProgress)
+    </script>
 </body>
 
 </html>

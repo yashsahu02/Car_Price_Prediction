@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Price Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='home.css') }}">
+
+    <style>
+        .scroll-progress{
+            width: 0;
+            background-color: yellow;
+            height: 3px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="scroll-progress"></div>
+    <div class="scroll-progress">
+
+    </div>
+
+
     <div class="navbar">
         <!-- <a href="">HOME</a> -->
         <a href="{{ url_for('static',filename='aboutData.html') }}">ABOUT DATASET</a>
@@ -145,22 +160,24 @@
         </form>
     </div>
 
-     <!-- JavaScript for scroll progress bar -->
-     <script>
-        const scrollProgressElement = document.querySelector(".scroll-progress");
 
-        function scrollProgress() {
-            const totalheightOfWebPage = document.body.scrollHeight;
-            const currentDistanceFromTop = document.documentElement.scrollTop;
-            const windowHeight = document.documentElement.clientHeight;
 
-            const scrolledPercentage = (currentDistanceFromTop / (totalheightOfWebPage - windowHeight)) * 100;
+<script>
+const scrollProgressElement = document.querySelector(".scroll-progress");
 
-            scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
-        }
+function scrollProgress(){
+    const totalheightOfWebPage = document.body.scrollHeight;
+    const currentDistanceFromTop = document.documentElement.scrollTop;
+    const windowHeight = document.documentElement.clientHeight;
 
-        document.addEventListener('scroll', scrollProgress)
-    </script>
+    const scrolledPercentage = (currentDistanceFromTop/(totalheightOfWebPage-windowHeight))*100;
+
+    scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
+}
+
+document.addEventListener('scroll',scrollProgress)
+</script>
+
 </body>
 
 </html>
