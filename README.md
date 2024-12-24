@@ -74,8 +74,8 @@ Follow these steps to set up the project locally:
 <hr>
 
 ## Usage
-- Launch the application:
-command: <code>python app.py</code>
+- Launch the application:<br>
+**command:** <code>python app.py</code>
 
 - Open the web application in your browser.
 
