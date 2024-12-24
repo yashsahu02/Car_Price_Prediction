@@ -3,6 +3,7 @@ A machine learning web application that predicts the price of used cars based on
 
 Try it out : https://car-price-prediction-q0fz.onrender.com/
 <br>
+<hr>
 
 ## Table of Contents
 - Introduction
@@ -15,6 +16,14 @@ Try it out : https://car-price-prediction-q0fz.onrender.com/
 - Future Work
 - Demo
 - License
+
+<hr>
+## Introduction
+The Old Car Price Prediction project utilizes a regression model trained on used car data to predict their market price. This tool is designed for both car dealers and buyers, helping them make informed decisions.
+
+<hr>
+
+
 
 
 ## Main Page
