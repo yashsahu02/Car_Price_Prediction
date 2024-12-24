@@ -24,6 +24,47 @@ The Old Car Price Prediction project utilizes a regression model trained on used
 
 <hr>
 
+## Features
+🚗 Predicts the price of a used car based on input features.
+📊 Provides insights into car pricing trends.
+🌐 Interactive and user-friendly interface built with Flask.
+
+<hr>
+
+## Dataset Description
+- The dataset used in this project was obtained from "Kaggle". Link : (https://www.kaggle.com/datasets/manishkr1754/cardekho-used-car-data) 
+
+The dataset used includes the following columns:
+
+- Car Name: Name and brand of the car.
+- Vehicle Age: Age of the car in years.
+- Kilometers Driven: Total distance the car has been driven, measured in kilometers.
+- Seller Type: The category of the seller (e.g., Individual, Dealer).
+- Fuel Type: Type of fuel used by the car (e.g., Petrol, Diesel, CNG, Electric).
+- Transmission Type: Gear system of the car (e.g., Manual, Automatic).
+- Mileage: Fuel efficiency of the car, typically measured in km/l or km/kg.
+- Engine: Engine capacity or displacement, measured in cubic centimeters (cc).
+- Max Power: The maximum power output of the car's engine, measured in brake horsepower (bhp).
+- Seats: Number of seats available in the car.
+- Selling Price: The final price at which the car was sold (target variable).
+
+<hr>
+
+## Technologies Used
+- Programming Language
+- Python
+<br>
+- Framework
+- Flask
+<br>
+- Libraries
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+
 
 
 
