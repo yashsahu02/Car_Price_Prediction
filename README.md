@@ -100,12 +100,17 @@ The RandomForestRegressor achieved the highest performance as compared to other 
 ## Demo
 - Watch the full project demo:
 
+**Demo Video**
+
+https://github.com/user-attachments/assets/8ac8a534-7273-4943-9729-a466d6b95c89
+
+<br>
 
 
 
+**Screenshots**
 
-
-## Main Page
+**Main Page**
 ![Screenshot (1)](https://github.com/user-attachments/assets/0a6495a5-31d7-4b3f-97ae-34e9657e911b)
 
 <br>
@@ -118,15 +123,15 @@ The RandomForestRegressor achieved the highest performance as compared to other 
 
 <br>
 
-## About Dataset Page
+**About Dataset Page**
 ![Screenshot (4)](https://github.com/user-attachments/assets/ecc48685-961b-49d8-991d-2678ddf7db08)
 
 <br>
 
-## About Model Page
+**About Model Page**
 ![Screenshot (6)](https://github.com/user-attachments/assets/899056c9-7258-40f8-b2dc-593619b99449)
 
 <br>
 
-## Github Link Page
+**Github Link Page**
 ![Screenshot (7)](https://github.com/user-attachments/assets/2c853b28-1cc7-4d74-b91b-3c624337310f)
