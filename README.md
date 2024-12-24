@@ -52,11 +52,11 @@ The dataset used includes the following columns:
 
 ## Technologies Used
 
-**Programming Language** : Python
+- **Programming Language** : Python
 <br>
-**Framework** : Flask
+- **Framework** : Flask
 <br>
-**Libraries** : Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- **Libraries** : Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
 
 <hr>
 
