@@ -32,7 +32,7 @@ The Old Car Price Prediction project utilizes a regression model trained on used
 
 ## Dataset Description
 - The dataset used in this project was obtained from "Kaggle".
-Link : (https://www.kaggle.com/datasets/manishkr1754/cardekho-used-car-data) 
+- Link : (https://www.kaggle.com/datasets/manishkr1754/cardekho-used-car-data) 
 
 The dataset used includes the following columns:
 
@@ -53,7 +53,9 @@ The dataset used includes the following columns:
 ## Technologies Used
 
 **Programming Language** : Python
+<br>
 **Framework** : Flask
+<br>
 **Libraries** : Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
 
 <hr>
