@@ -63,14 +63,14 @@ The dataset used includes the following columns:
 ## Installation
 Follow these steps to set up the project locally:
 
-1. Clone the repository:
-command: git clone https://github.com/yashsahu02/Car_Price_Prediction.git
+1. Clone the repository:<br>
+**command:** git clone https://github.com/yashsahu02/Car_Price_Prediction.git
 
-2. Install the dependencies:
-command: pip install -r requirements.txt
+2. Install the dependencies:<br>
+**command:** pip install -r requirements.txt
 
-3. Run the Flask application:
-command: python app.py
+3. Run the Flask application:<br>
+**command:** python app.py
 
 <hr>
 
