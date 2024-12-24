@@ -79,14 +79,8 @@ command: python app.py
 
 - Open the web application in your browser.
 
-- Enter the car details like:
-
-Car name
-Age
-Kilometers driven
-Fuel type
-etc.
-
+- Enter the car details like: (Car name,Age,Kilometers driven,Fuel type, etc.)
+- 
 - Get the predicted price displayed on the interface.
 
 <hr>
