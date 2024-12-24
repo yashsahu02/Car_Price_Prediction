@@ -63,24 +63,24 @@ The dataset used includes the following columns:
 Follow these steps to set up the project locally:
 
 1. Clone the repository:<br>
-**command:** git clone https://github.com/yashsahu02/Car_Price_Prediction.git
+**command:** <i>git clone https://github.com/yashsahu02/Car_Price_Prediction.git</i>
 
 2. Install the dependencies:<br>
-**command:** pip install -r requirements.txt
+**command:** <i>pip install -r requirements.txt</i>
 
 3. Run the Flask application:<br>
-**command:** python app.py
+**command:** <i>python app.py</i>
 
 <hr>
 
 ## Usage
 - Launch the application:
-command: python app.py
+command: <code>python app.py</code>
 
 - Open the web application in your browser.
 
 - Enter the car details like: (Car name,Age,Kilometers driven,Fuel type, etc.)
-- 
+
 - Get the predicted price displayed on the interface.
 
 <hr>
