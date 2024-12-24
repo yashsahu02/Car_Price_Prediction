@@ -1,6 +1,21 @@
-﻿# Car_Price_Prediction
+﻿# Old Car Price Prediction
+A machine learning web application that predicts the price of used cars based on various features such as car name, age, kilometers driven, fuel type, and more.
+
 Try it out : https://car-price-prediction-q0fz.onrender.com/
 <br>
+
+## Table of Contents
+- Introduction
+- Features
+- Dataset Description
+- Technologies Used
+- Installation
+- Usage
+- Results
+- Future Work
+- Demo
+- License
+
 
 ## Main Page
 ![Screenshot (1)](https://github.com/user-attachments/assets/0a6495a5-31d7-4b3f-97ae-34e9657e911b)
